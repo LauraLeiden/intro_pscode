@@ -2,3 +2,19 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Set int variable called rand_num to a random number between 1-10
+Set int variable called user_num to 0
+Set int variable called limit_try to 3
+Set int variable called on_try to 0
+
+While on_try<limit_try 
+	(
+		Onscreen prompt to enter number
+		store their input into user_num
+			if user_num==rand_num print "You guessed it!"
+			else
+			print "that is not it. try again"
+		on_try++
+	)
+If on_try==limit_try print "sorry you ran out of guesses. The correct num was:" and print rand_num var value
+

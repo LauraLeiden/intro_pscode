@@ -2,3 +2,24 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Set int variable num_prod=0
+Set int variable num_package=0
+Set int variable num_cases=1
+
+Set int max_package=50
+Set int current_packages=0
+
+Each time scanned:
+While current_packages<50
+	num_prod=num_prod+2
+	num_packages++
+	current_packages++
+
+	display "current amounts:" num_prod, num_packages, num_cases
+
+If current_packages=max_package
+	num_cases++
+	current_packages=0
+
+
+	

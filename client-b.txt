@@ -2,3 +2,37 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Int variable final_destination_x to x coordinate
+Int variable final_destination_y to y coordinate
+Int variable cust_loc_x to customer starting x coordinate
+Int variable cust_loc_y to customer starting y coordinate
+
+While cust_loc_x < final_destination_x
+	print "you are at" print cust_loc_x, cust_loc_y
+	print "final location is at" print final_destination_x, final_destination_y
+
+	tell customer to move East
+		If cust moves East, increment cust_loc_x++
+
+While cust_loc_x > final_destination_x
+	print "you are at" print cust_loc_x, cust_loc_y
+	print "final location is at" print final_destination_x, final_destination_y
+	tell customer to move West
+		If Cust moves West, increment cust_loc_x--
+
+While cust_loc_y < final_destination_y
+	print "you are at" print cust_loc_x, cust_loc_y
+	print "final location is at" print final_destination_x, final_destination_y
+	tell customer to move North
+		If cust moves North, increment cust_loc_y++
+	
+while cust_loc_y > final_destination_y
+	print "you are at" print cust_loc_x, cust_loc_y
+	print "final location is at" print final_destination_x, final_destination_y
+	tell customer to move South
+		If cust moves South, increment cust_loc_y--
+
+If cust_loc_x == final_destination_x and cust_loc_y==final_destination_y
+	print "you have arrived!" 
+
+
